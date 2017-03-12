@@ -1,0 +1,11 @@
+<h2 class="header center">Compare 'em</h2>
+<div class="container center">
+	<%= form_tag(home_result_path, method: "post") do %>
+	<div class="search-wrapper card">
+		<%= text_field_tag :search, params[:search], prompt: "Enter a keyword...", class: "form-control", id: "search" %>	 
+		<i style="position: absolute; top: 10px;right: 10px;cursor: pointer;" class="material-icons">search</i>
+	</div>
+
+ 	<%= submit_tag "Search",class: "btn waves-effect waves-light" %>
+ 	<%end%>
+</div>
