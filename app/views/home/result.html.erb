@@ -2,21 +2,18 @@
 
 <div class="container">
  <div class="col s9 m7">
-    <h3 class="header center"><%= @product_title %></h3>
+    <h5 class="header center"><%= @amazon_title %></h5>
     <div class="card horizontal">
       <div class="card-image">
-        <%= image_tag "imac.jpg" %>
+        <%= image_tag @amazon_image %>
       </div>
       <div class="card-stacked">
         <div class="card-content">
           
-			<a href="#"><p>Snapdeal</p></a>
-          	<h4><%= 123 %></h4>
-          	<a href="#"><p>Amazon</p></a>
-          	<h4><%= 123456 %></h4>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+			<a href=<%= @snapdeal_link %>><p>Snapdeal</p></a>
+          	<h5><%= @snapdeal_price %></h5>
+          	<a href= <%= @amazon_link %>><p>Amazon</p></a>
+          	<h5>Rs <%= @amazon_price %></h5>
         </div>
       </div>
     </div>
