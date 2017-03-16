@@ -9,13 +9,15 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          
-			<a href=<%= @snapdeal_link %>><p>Snapdeal</p></a>
+
+			      <a href=<%= @snapdeal_link %>><p>Snapdeal</p></a>
           	<h5><%= @snapdeal_price %></h5>
           	<a href= <%= @amazon_link %>><p>Amazon</p></a>
-          	<h5>Rs <%= @amazon_price %></h5>
+          	<h5>Rs <%= @amazon_price || "Couldn't fetch" %></h5>
+            <a href= <%= @flipkart_link %>><p>Flipkart</p></a>
+          	<h5>Rs <%= @flipkart_price %></h5>
         </div>
       </div>
     </div>
-  </div>	
+  </div>
 </div>
